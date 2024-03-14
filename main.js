@@ -1,6 +1,7 @@
 import { tesztesetek } from "./teszt.js";
 debugger;
-
+/* **************************************FELADATSPECIFIKÁCIÓ********************************************
+//Két egész szám legnagyobb közösosztoja az a szám, mely mindkettőnek osztoja, azok közül a legnagyobb*/
 export function fuggvenyem(a, b) {
   if (a===0 || b===0){
     return "Egyik szám sem lehet nulla!"
