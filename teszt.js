@@ -7,11 +7,22 @@ let elvart=5;
 
 console.log(`Bemenet a: ${a} | Bemenet b: ${b} | Kimenet: ${fuggvenyem(a,b)} | Elvárt kimenet: 5`);
 
+console.assert(
+    vart===fuggvenyem(a,b),
+    `a=${a}, b=${b}, lnko=${vart}`,
+    "A várt eredmény nem stimmel"
+)
+
 a=30;
 b =73;
 elvart=1;
+console.assert(
+    vart===fuggvenyem(a,b),
+    "%o",
+    `a=${a}, b=${b}, lnko=${vart}`,
+    "A várt eredmény"
+)
 
-console.log(`Bemenet a: ${a} | Bemenet b: ${b} | Kimenet: ${fuggvenyem(a,b)} | Elvárt kimenet: 1`);
 
 a=15;
 b =25;
@@ -28,12 +39,12 @@ console.log(`Bemenet a: ${a} | Bemenet b: ${b} | Kimenet: ${fuggvenyem(a,b)} | E
 
 a=0;
 b =25;
-elvart=1;
+elvart="Egyik szám sem lehet nulla!";
 
-console.log(`Bemenet a: ${a} | Bemenet b: ${b} | Kimenet: ${fuggvenyem(a,b)} | Elvárt kimenet: 5`);
+console.log(`Bemenet a: ${a} | Bemenet b: ${b} | Kimenet: ${fuggvenyem(a,b)} | Elvárt kimenet: Egyik szám sem lehet nulla!`);
 
-a=15;
-b =25;
+a=0;
+b =0;
 elvart=5;
 
 console.log(`Bemenet a: ${a} | Bemenet b: ${b} | Kimenet: ${fuggvenyem(a,b)} | Elvárt kimenet: 5`);
